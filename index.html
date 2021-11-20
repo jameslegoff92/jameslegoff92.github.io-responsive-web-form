@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <style>
+      .attribution {
+        position: relative;
+        bottom: -150px;
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <h1 class="header__title">Learn to code by watching others</h1>
+        <p class="header__text">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </header>
+      <main class="content-wrapper">
+        <section class="subscription-offer">
+          <p class="subscription-offer__text">
+            <span class="subscription-offer__text--secondary" >Try it free 7 days</span> then $20/mo. thereafter
+          </p>
+        </section>
+        <div class="form-container">
+          <form class="form">
+            <div class="input-container">
+              <label for="fname"></label>
+              <input class="form__input" style="outline-color: lightblue;"  type="text" id="fname" placeholder="First Name" />
+              <svg id="fname-error-icon" class="error-icon--off" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+              <div  id="fname-error-msg" class="error-msg--off">
+                <p class="error-msg-color" >First Name cannot be empty</p>
+              </div>
+            </div>
+            <div class="input-container">
+              <label for="lname"></label>
+              <input class="form__input" style="outline-color: lightblue;"  type="text" id="lname" placeholder="Last Name" />
+              <svg id="lname-error-icon" class="error-icon--off" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+              <div id="lname-error-msg" class="error-msg--off">
+                <p class="error-msg-color" >Last Name cannot be empty</p>
+              </div>
+            </div>
+            <div class="input-container">
+              <label for="email"></label>
+              <input class="form__input" style="outline-color: lightblue;" type="text" id="email" placeholder="Email Address" />
+              <svg id="email-error-icon" class="error-icon--off" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+              <div id="email-error-msg" class="error-msg--off">
+                <p class="error-msg-color" >Looks like this is not an email</p>
+              </div>
+            </div>
+            <div class="input-container">
+              <label for="password"></label>
+              <input class="form__input" style="outline-color: lightblue;"  type="password" id="password" placeholder="Password" />
+              <svg id="password-error-icon" class="error-icon--off" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+              <div id="password-error-msg" class="error-msg--off">
+                <p class="error-msg-color">Password cannot be empty</p>
+              </div>
+            </div>
+          <button id="form-btn" class="form__btn" type="submit">Claim Your Free Trial</button>
+          </form>
+          <p class="form-container__text">
+            By clicking the button, you are agreeing to our <span class="form-container__text--secondary" >Terms and Services</span> 
+          </p>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="app.js"></script>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">James Louis Le-Goff</a>.
+      </p>
+    </footer>
+  </body>
+</html>
